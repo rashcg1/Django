@@ -5,7 +5,7 @@ from django.core.urlresolvers import reverse
 class Album(models.Model):
     artist = models.CharField(max_length=250)
     album_title= models.CharField(max_length=500)
-    genre = models.CharField(max_length=100)
+    genre = models.CharField(max_length=150)
     album_logo = models.FileField()
 
     def get_absoulte_url(self):
